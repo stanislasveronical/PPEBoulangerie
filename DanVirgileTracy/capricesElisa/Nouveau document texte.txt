@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Les Caprices d'Elisa - Nos produits</title>
+			<link href="style.css" rel="stylesheet" type="text/css"/>
+		</head>
+
+		<body>
+
+			<header>
+				<figure>
+					<center>
+						<a href="index.php"><img src = "logo.jpg" alt = "Logo de la boulangerie" title = "Magnifique logo"/></a>
+					</center>
+				</figure>
+			</header>
+
+			<header>
+				<center>
+				<ul id = "menuProduit">
+					<li><a href="index.php">Accueil</a></li>
+				</ul>
+				
+					<ul id = "menuProduit">
+						<li><a href="categories.php">Nos produits</a>
+						<ul>
+							<li><a href="pains.php">Pains</a></li>
+								<li><a href="patisseries.php">Pâtisseries</a></li>
+								<li><a href="viennoiseries.php">Viennoiseries</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul id = "menuProduit">		
+					<li><a href="commandes.php">Commander</a>
+					</ul>
+					<ul id = "menuProduit">
+					<li><a href="contact.php">Nous contacter</a></li>
+					</ul>
+			</header>
+			<ul id="menu">
+					<li><a href="pains.php" title="aller à la section 1">Pains</a></li>
+					<li><a href="patisseries.php" title="aller à la section 2">Pâtisseries</a></li>
+					<li><a href="viennoiseries.php" title="aller à la section 3">Viennoiseries</a></li>
+			</ul>
+			
+			<?php
+				echo "Ok";
+			?>
+			
+
+		</body>
+	</html>

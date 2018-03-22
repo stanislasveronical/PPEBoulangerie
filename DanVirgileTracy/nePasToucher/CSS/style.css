@@ -1,0 +1,283 @@
+body
+{
+	background-color: #D8EAE9;
+}
+
+a:link 
+{ 
+	text-decoration:none;
+	font-family: Brush Script Std, Brush Script MT, cursive;
+	font-size:24px;
+	color: #000000;
+}
+
+a:visited
+{
+	color: #000000;
+}
+
+a:hover
+{
+	color: #D8EAE9;
+}
+
+h2
+{
+	font-family: Brush Script Std, Brush Script MT, cursive;
+}
+
+p
+{
+	font-family: Arial Narrow, sans-serif;
+	font-size:18px;
+	color: #000000;
+}
+
+div
+{
+	margin-right: 30px;
+}
+
+caption
+{	
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size:25px;
+	font-family: Brush Script Std, Brush Script MT, cursive;
+}
+
+input
+{
+	font-size:20px;
+	font-family: Brush Script Std, Brush Script MT, cursive;
+	text-align: center;
+}
+#contact td, tr
+{
+	font-family: Arial Narrow, sans-serif;
+	font-size:18px;
+	color: #000000;
+	text-align: center;
+	margin: auto;
+	border: none;
+}
+#horaire_tb td,tr
+{
+	font-family: Arial Narrow, sans-serif;
+	font-size:18px;
+	color: #000000;
+	text-align: center;
+	margin: auto;
+	border: none;
+}
+
+table /* Le tableau en lui-même */
+{
+   margin: auto; /* Centre le tableau */
+}
+
+td,th /* Les cellules normales */
+{
+   font-family: Brush Script Std, Brush Script MT, cursive;
+   text-align: center; /* Tous les textes des cellules seront centrés*/
+   padding: 5px; /* Petite marge intérieure aux cellules pour éviter que le texte touche les bordures */
+   font-size: 25px;
+   margin: auto; /* Centre le tableau */
+   border: 4px outset #D8EAE9; /* Bordure du tableau avec effet 3D (outset) */
+   border-collapse: collapse; /* Colle les bordures entre elles */
+}
+
+#menuProduit,#menuProduit ul
+{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+
+#menuProduit li
+{
+	display:inline-block;
+	position:relative;
+	border-radius:6px 6px 6px 6px;
+	margin-right: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#menuProduit ul li
+{
+	display:inherit;
+	border-radius:0;
+}
+
+#menuProduit ul li:hover
+{
+	border-radius:0;
+}
+
+#menuProduit ul li:last-child
+{
+	border-radius:0 0 10px 10px;
+}
+
+#menuProduit ul
+{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .8s all .3s;
+	-webkit-transition: .8s all .3s;
+	transition: .8s all .3s;
+}
+
+#menuProduit li:hover ul
+{
+	max-height:15em;
+}
+
+/* background des liens menus */
+#menuProduit li:first-child
+{
+	background-color: #74C7C2;
+	background-image:-webkit-linear-gradient(top, #74C7C2 0%, #74C7C2 100%);
+	background-image:linear-gradient(to bottom, #74C7C2 0%, #74C7C2 100%);
+}
+
+#menuProduit li:nth-child(2)
+{
+	background-color: #74C7C2;
+	background-image: -webkit-linear-gradient(top, #74C7C2 0%, #74C7C2 100%);
+	background-image:linear-gradient(to bottom, #74C7C2 0%, #74C7C2 100%);
+}
+
+#menuProduit li:nth-child(3)
+{
+	background-color: #74C7C2;
+	background-image:-webkit-linear-gradient(top, #74C7C2 0%, #74C7C2 100%);
+	background-image:linear-gradient(to bottom, #74C7C2 0%, #74C7C2 100%);
+}
+
+#menuProduit li:last-child
+{
+	background-color: #74C7C2;
+	background-image:-webkit-linear-gradient(top, #74C7C2 0%, #74C7C2 100%);
+	background-image:linear-gradient(to bottom, #74C7C2 0%, #74C7C2 100%);
+}
+
+/* background des liens sous menus */
+#menuProduit li:first-child li
+{
+	background:#74C7C2;
+}
+
+#menuProduit li:nth-child(2) li
+{
+	background:#74C7C2;
+}
+
+#menuProduit li:nth-child(3) li
+{
+	background:#74C7C2;
+}
+
+#menuProduit li:last-child li
+{
+	background:#74C7C2;
+}
+
+/* background des liens menus et sous menus au survol */
+#menuProduit li:first-child:hover, #menuProduit li:first-child li:hover
+{
+	background:#74C7C2;
+}
+
+}
+/* les a href */
+#menuProduit a
+{
+	text-decoration:none;
+	display:block;
+	padding:10px 32px;
+	color:#fff;
+	font-family:Brush Script Std, Brush Script MT, cursive;
+}
+
+#menuProduit ul a
+{
+	padding:10px 0;
+}
+
+#menuProduit li:hover li a
+{
+	color:#fff;
+	text-transform:inherit;
+}
+
+#menuProduit li:hover a, #menuProduit li li:hover a
+{
+	color:#000000;
+}
+
+#menuAdmin, #menuAdmin ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  width: 180px; /* seule ligne rajoutée */
+  padding-bottom: 15px;
+}
+
+#menuAdmin li {
+  position: relative;
+  background:#EFEFEF; /* juste pour cacher le texte de la page en-dessous */
+}
+
+#menuAdmin a {
+  display:block;
+  text-decoration: none;
+  color: #000;
+}
+
+#menuAdmin ul {
+  position: absolute;
+  left:-999em;
+}
+
+#menuAdmin li:hover ul {
+  top: 0;
+  left: 180px;
+}
+
+label,selected
+{
+	font-family: Brush Script Std, Brush Script MT, cursive;
+	font-size: 25px;
+}
+
+b
+{
+	font-family:Brush Script Std, Brush Script MT, cursive;
+	font-size: 25px;
+}
+
+td, #nomP
+{
+	width : 55px;
+}
+td, #prixP
+{
+	width :115px;
+}
+td, #photoP
+{ 
+	width :40 px;
+}
+
+th
+{
+	font-weight: normal;
+}
+
